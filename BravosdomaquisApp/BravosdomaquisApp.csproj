@@ -1,0 +1,1107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9025B4D4-D99D-4F29-B6A5-2AE326274305}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BravosdomaquisApp</RootNamespace>
+    <AssemblyName>BravosdomaquisApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\BravosdomaquisApp\BravosdomaquisApp\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddImagens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddImagens.Designer.cs">
+      <DependentUpon>AddImagens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJogos.Designer.cs">
+      <DependentUpon>AddJogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJornadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJornadas.Designer.cs">
+      <DependentUpon>AddJornadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMemoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMemoria.Designer.cs">
+      <DependentUpon>AddMemoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddParceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddParceiro.Designer.cs">
+      <DependentUpon>AddParceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilhete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bilhete.Designer.cs">
+      <DependentUpon>Bilhete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campeaonato.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Campeaonato.Designer.cs">
+      <DependentUpon>Campeaonato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clubes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clubes.Designer.cs">
+      <DependentUpon>Clubes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comentarios.Designer.cs">
+      <DependentUpon>Comentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacto.Designer.cs">
+      <DependentUpon>Contacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Banner.Designer.cs">
+      <DependentUpon>Banner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ButtunUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxUI.Designer.cs">
+      <DependentUpon>TextBoxUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToogleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CriarConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarConta.Designer.cs">
+      <DependentUpon>CriarConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarInfoSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarInfoSite.Designer.cs">
+      <DependentUpon>EditarInfoSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipaTecnica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquipaTecnica.Designer.cs">
+      <DependentUpon>EquipaTecnica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estadios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Estadios.Designer.cs">
+      <DependentUpon>Estadios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackgroudModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackgroudModal.Designer.cs">
+      <DependentUpon>FormBackgroudModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FotosPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FotosPane.Designer.cs">
+      <DependentUpon>FotosPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Galeria.Designer.cs">
+      <DependentUpon>Galeria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoBanner.Designer.cs">
+      <DependentUpon>InfoBanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoClube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoClube.Designer.cs">
+      <DependentUpon>infoClube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoClubes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoClubes.Designer.cs">
+      <DependentUpon>InfoClubes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoEstadios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoEstadios.Designer.cs">
+      <DependentUpon>InfoEstadios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoJogadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoJogadores.Designer.cs">
+      <DependentUpon>InfoJogadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoJornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoJornada.Designer.cs">
+      <DependentUpon>infoJornada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoMembro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoMembro.Designer.cs">
+      <DependentUpon>InfoMembro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoResultados.Designer.cs">
+      <DependentUpon>infoResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoTecnicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoTecnicos.Designer.cs">
+      <DependentUpon>infoTecnicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogadores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Jogadores.Designer.cs">
+      <DependentUpon>Jogadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Jogos.Designer.cs">
+      <DependentUpon>Jogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JogosDecrorrerPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JogosDecrorrerPane.Designer.cs">
+      <DependentUpon>JogosDecrorrerPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JogosPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JogosPane.Designer.cs">
+      <DependentUpon>JogosPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jornadas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Jornadas.Designer.cs">
+      <DependentUpon>Jornadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JornadasPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JornadasPane.Designer.cs">
+      <DependentUpon>JornadasPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembrosDaDirecao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MembrosDaDirecao.Designer.cs">
+      <DependentUpon>MembrosDaDirecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memorial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Memorial.Designer.cs">
+      <DependentUpon>Memorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memorialPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="memorialPane.Designer.cs">
+      <DependentUpon>memorialPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalSMS.Designer.cs">
+      <DependentUpon>ModalSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newslatter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newslatter.Designer.cs">
+      <DependentUpon>Newslatter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Noticia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Noticia.Designer.cs">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parceiro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Parceiro.Designer.cs">
+      <DependentUpon>Parceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personalizar.cs" />
+    <Compile Include="pontuacaoPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pontuacaoPane.Designer.cs">
+      <DependentUpon>pontuacaoPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pontuação.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pontuação.Designer.cs">
+      <DependentUpon>Pontuação.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreVeiwImagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreVeiwImagem.Designer.cs">
+      <DependentUpon>PreVeiwImagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resultados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resultados.Designer.cs">
+      <DependentUpon>Resultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Socios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Socios.Designer.cs">
+      <DependentUpon>Socios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sourceBanner.cs" />
+    <Compile Include="sourceClubes.cs" />
+    <Compile Include="SourceContactos.cs" />
+    <Compile Include="sourceEmail.cs" />
+    <Compile Include="sourceEstadios.cs" />
+    <Compile Include="sourceJogadores.cs" />
+    <Compile Include="sourceMembros.cs" />
+    <Compile Include="SourceNoticias.cs" />
+    <Compile Include="sourceParceiros.cs" />
+    <Compile Include="sourceTecnicos.cs" />
+    <Compile Include="ResultadoPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultadoPane.Designer.cs">
+      <DependentUpon>ResultadoPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProgress.Designer.cs">
+      <DependentUpon>TelaProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerGaleria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerGaleria.Designer.cs">
+      <DependentUpon>VerGaleria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerJogos.Designer.cs">
+      <DependentUpon>VerJogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerJogosDecorrer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerJogosDecorrer.Designer.cs">
+      <DependentUpon>VerJogosDecorrer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerMemorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerMemorial.Designer.cs">
+      <DependentUpon>VerMemorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerPontuacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerPontuacoes.Designer.cs">
+      <DependentUpon>VerPontuacoes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddImagens.resx">
+      <DependentUpon>AddImagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJogos.resx">
+      <DependentUpon>AddJogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJornadas.resx">
+      <DependentUpon>AddJornadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMemoria.resx">
+      <DependentUpon>AddMemoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddParceiro.resx">
+      <DependentUpon>AddParceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilhete.resx">
+      <DependentUpon>Bilhete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campeaonato.resx">
+      <DependentUpon>Campeaonato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clubes.resx">
+      <DependentUpon>Clubes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comentarios.resx">
+      <DependentUpon>Comentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacto.resx">
+      <DependentUpon>Contacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banner.resx">
+      <DependentUpon>Banner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBoxUI.resx">
+      <DependentUpon>TextBoxUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriarConta.resx">
+      <DependentUpon>CriarConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarInfoSite.resx">
+      <DependentUpon>EditarInfoSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipaTecnica.resx">
+      <DependentUpon>EquipaTecnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadios.resx">
+      <DependentUpon>Estadios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBackgroudModal.resx">
+      <DependentUpon>FormBackgroudModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FotosPane.resx">
+      <DependentUpon>FotosPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Galeria.resx">
+      <DependentUpon>Galeria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoBanner.resx">
+      <DependentUpon>InfoBanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoClube.resx">
+      <DependentUpon>infoClube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoClubes.resx">
+      <DependentUpon>InfoClubes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoEstadios.resx">
+      <DependentUpon>InfoEstadios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoJogadores.resx">
+      <DependentUpon>InfoJogadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoJornada.resx">
+      <DependentUpon>infoJornada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoMembro.resx">
+      <DependentUpon>InfoMembro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoResultados.resx">
+      <DependentUpon>infoResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoTecnicos.resx">
+      <DependentUpon>infoTecnicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogadores.resx">
+      <DependentUpon>Jogadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogos.resx">
+      <DependentUpon>Jogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JogosDecrorrerPane.resx">
+      <DependentUpon>JogosDecrorrerPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JogosPane.resx">
+      <DependentUpon>JogosPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jornadas.resx">
+      <DependentUpon>Jornadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JornadasPane.resx">
+      <DependentUpon>JornadasPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembrosDaDirecao.resx">
+      <DependentUpon>MembrosDaDirecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorial.resx">
+      <DependentUpon>Memorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memorialPane.resx">
+      <DependentUpon>memorialPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalSMS.resx">
+      <DependentUpon>ModalSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newslatter.resx">
+      <DependentUpon>Newslatter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Noticia.resx">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parceiro.resx">
+      <DependentUpon>Parceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pontuacaoPane.resx">
+      <DependentUpon>pontuacaoPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pontuação.resx">
+      <DependentUpon>Pontuação.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreVeiwImagem.resx">
+      <DependentUpon>PreVeiwImagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados.resx">
+      <DependentUpon>Resultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Socios.resx">
+      <DependentUpon>Socios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultadoPane.resx">
+      <DependentUpon>ResultadoPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProgress.resx">
+      <DependentUpon>TelaProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerGaleria.resx">
+      <DependentUpon>VerGaleria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerJogos.resx">
+      <DependentUpon>VerJogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerJogosDecorrer.resx">
+      <DependentUpon>VerJogosDecorrer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMemorial.resx">
+      <DependentUpon>VerMemorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerPontuacoes.resx">
+      <DependentUpon>VerPontuacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Personalizar.datasource" />
+    <None Include="Properties\DataSources\sourceBanner.datasource" />
+    <None Include="Properties\DataSources\sourceClubes.datasource" />
+    <None Include="Properties\DataSources\SourceContactos.datasource" />
+    <None Include="Properties\DataSources\sourceEmail.datasource" />
+    <None Include="Properties\DataSources\sourceEstadios.datasource" />
+    <None Include="Properties\DataSources\sourceJogadores.datasource" />
+    <None Include="Properties\DataSources\sourceMembros.datasource" />
+    <None Include="Properties\DataSources\SourceNoticias.datasource" />
+    <None Include="Properties\DataSources\sourceParceiros.datasource" />
+    <None Include="Properties\DataSources\sourceTecnicos.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\darkmode.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\lightmode1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\lightmode.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\baseline_brightness_3_black_36dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\baseline_wb_sunny_black_36dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_brightness_3_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_wb_sunny_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_wb_sunny_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\icones\mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\icones\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\icones\mini1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\imgs\icones\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darklight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darklight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darklight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darklight3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campeonato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resultados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pontuacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jornadas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jogos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resultado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipatecnica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resultados1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clubes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newslatter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comentarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\socios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parceiros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membrosda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arquivos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoSMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sucess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campeonato11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campeonato1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camp2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trofeu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-excluir-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Postar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconPost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clubes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemaEquipa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEsquerda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemaEquipa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemaEquipa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\att.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pontuacaoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MembrosDaDirecao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbaSocios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userIMG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ver-detalhes-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewDOC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-visualização-de-arquivo-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactsICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconConts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apagarr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editGrid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocUpload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caixaSMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactoSms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parceiroIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-caixa-de-seleção-marcada-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-caixa-de-seleção-marcada-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jornadasIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconJogos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\troca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\troca1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trocar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galeria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoClube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bilhete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galeriaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-baixar-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-baixar-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memorialIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bilhetesIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resultadosIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casa-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconNotif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aoVivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estdadioWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spalsh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\criarconta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-novo-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reproduzir-youtube-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-linkedin-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconVIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBilhe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeBnormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\efx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximizado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tamanhoNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximizado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximizado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minizado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baixoLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baixoLightt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cimaLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baixoDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cimaDark.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
